@@ -5,13 +5,56 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_4pr"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="1088.8">
     <Grid>
-        <TabControl HorizontalAlignment="Left" Height="420" VerticalAlignment="Top" Width="794" Margin="0,0,-0.4,0" TabStripPlacement="Left">
-            <TabItem Header="TabItem">
+        <TabControl HorizontalAlignment="Left" Height="420" VerticalAlignment="Top" Width="1082" TabStripPlacement="Left">
+            <TabItem Header="Считывание одномерного массива с клавиатуры">
+                <Grid Background="#FFE5E5E5">
+                    <Label Content="Считывание одномерного массива с клавиатуры" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+                    <Label Content="Введите элемент, который необходимо добавить в массив:" HorizontalAlignment="Left" Margin="10,44,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="text_box" HorizontalAlignment="Left" Height="23" Margin="10,84,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="347"/>
+                    <ListBox x:Name="list_box" HorizontalAlignment="Left" Height="360" Margin="394,44,0,0" VerticalAlignment="Top" Width="274"/>
+                    <Label Content="Одномерный массив:" HorizontalAlignment="Left" Margin="394,12,0,0" VerticalAlignment="Top"/>
+                    <Button Click="AddList" Content="Добавить" HorizontalAlignment="Left" Margin="282,122,0,0" VerticalAlignment="Top" Width="75"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Вывод одномерного массива на экран">
                 <Grid Background="#FFE5E5E5"/>
             </TabItem>
-            <TabItem Header="TabItem">
+            <TabItem Header="Вывод двумерного массива на экран" Margin="-2,-2,0,-2">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="Поиск максимума или минимума в одномерном массиве" Margin="-2,-2,0,-2">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="Поиск количества определенных элементов в одномерном массиве" Margin="-2,-2,0,-2">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="Поиск суммы и среднего арифметического определенных элементов" Margin="-2,-2,0,-2">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="Запись элементов массива в строку" Margin="-2,-2,0,-2">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="Работа с простыми числами" Margin="-2,-2,0,-2">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="Работа со строками" Margin="-2,-2,0,-2">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="Поиск количества единиц в записи числа " Margin="-2,-2,0,-2">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="Добавление элементов в массив в определенную позицию" Margin="-2,-2,0,-2">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="Удаление элементов из массива" Margin="-2,-2,0,-2">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="Сортировка одномерного массива" Margin="-2,-2,0,-2">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="Работа с файлами" Margin="-2,-2,0,-2">
                 <Grid Background="#FFE5E5E5"/>
             </TabItem>
         </TabControl>

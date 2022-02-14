@@ -24,5 +24,23 @@ namespace _4pr
         {
             InitializeComponent();
         }
+
+        //массив(коллекция)
+        public List<float> ListValues = new List<float>();
+
+        /// <summary>
+        /// Функция добавления элемента в массив
+        /// </summary>
+        
+        private void AddList(object sender, RoutedEventArgs e)
+        {
+            if(text_box.Text.Length > 0) {// если в текстовом поле содержиться какое-то значение
+                ListValues.Add(float.Parse(text_box.Text));// добавляем его в массив, параллельно преобразовывая в тип float
+
+                list_box.Items.Clear();// очищаем ListBox
+                for (int i = 0; i < ListValues.Count; i++)// перебираем элемеенты в массиве
+                    list_box.Items.Add(ListValues[i]);// добавляем элементы в ListBox
+            }
+        }
     }
 }
