@@ -31,15 +31,34 @@ namespace _4pr
         /// <summary>
         /// Функция добавления элемента в массив
         /// </summary>
-        
+
         private void AddList(object sender, RoutedEventArgs e)
         {
-            if(text_box.Text.Length > 0) {// если в текстовом поле содержиться какое-то значение
-                ListValues.Add(float.Parse(text_box.Text));// добавляем его в массив, параллельно преобразовывая в тип float
+            if (value_list.Text.Length > 0)
+            {
+                ListValues.Add(float.Parse(value_list.Text));
 
-                list_box.Items.Clear();// очищаем ListBox
-                for (int i = 0; i < ListValues.Count; i++)// перебираем элемеенты в массиве
-                    list_box.Items.Add(ListValues[i]);// добавляем элементы в ListBox
+                list_values.Items.Clear();
+                for (int i = 0; i < ListValues.Count; i++)
+                    list_values.Items.Add(ListValues[i]);
+            }
+        }
+
+
+
+
+        public List<string> listValues2 = new List<string>();
+
+
+
+
+        private void AddList2(object sender, RoutedEventArgs e)
+        {
+            string text = value_list2.Text;
+            listValues2 = value_list2.Text.Split(' ').ToList();
+            for (int i = 0; i < listValues2.Count; i++)
+            {
+                list_values2.Items.Add(listValues2[i]);
             }
         }
     }
